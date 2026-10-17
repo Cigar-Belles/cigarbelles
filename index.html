@@ -132,7 +132,12 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 .band .sub{font-family:'Special Elite','Courier New',monospace;font-weight:400;font-size:20px;letter-spacing:.04em;text-transform:none}
 .hero .label.muted{font-family:'Special Elite','Courier New',monospace;font-weight:400;font-size:16px;letter-spacing:.08em;text-transform:none;color:var(--silver)}
 .soon{font-family:'Special Elite','Courier New',monospace;font-weight:400;font-size:14px;letter-spacing:.06em;text-transform:none;transform:rotate(-2deg);padding:7px 12px}
-.band{background:var(--oxblood) radial-gradient(ellipse at 50% 120%,rgba(0,0,0,.35),transparent 60%)}
+.band{background:var(--panel);border-top:2px solid var(--oxblood);border-bottom:2px solid var(--oxblood)}
+
+/* sentence-case headlines, linen accents, oxblood as hairline only */
+h1,h2,.band p{text-transform:none;letter-spacing:0}
+em.gold,.band em.gold,.brand .wm span{color:var(--champagne)}
+.band .sub{color:var(--champagne)}
 </style>
 </head>
 <body>
@@ -154,7 +159,7 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
  <section class="hero">
   <div class="wrap hero-grid">
    <div class="hero-copy">
-    <div class="label muted">Philadelphia · Members' Society</div>
+    <div class="label muted">Philly Women's Cigar Society · 21+</div>
     <h1>Women who run the room, <em class="gold">then light up after.</em></h1>
     <div class="ornament"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><defs><linearGradient id="jet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4E2B6"/><stop offset=".55" stop-color="#B9975B"/><stop offset="1" stop-color="#3E6FB0"/></linearGradient></defs><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg></div>
     <p class="lede">A private cigar society for the women of Philadelphia.</p>
@@ -172,8 +177,8 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
  <div class="band">
   <div class="wrap">
    <div class="ornament"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg></div>
-   <p>We light up for the Philly women who <em class="gold">blazed the trail.</em></p>
-   <div class="sub">Their fire is ours to keep lit.</div>
+   <p>We light up for the women who <em class="gold">blazed the trail.</em></p>
+   <div class="sub">Their fire is ours to keep lit 🔥</div>
   </div>
  </div>
 
