@@ -14,10 +14,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,800;1,900&family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,900;1,6..96,700;1,6..96,900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Abril+Fatface&family=League+Spartan:wght@700;800&family=Playfair+Display:ital,wght@1,700;1,800;1,900&display=swap" rel="stylesheet">
 <style>
 :root{--onyx:#0B0B0B;--panel:#121110;--line:#2A2928;--bone:#EFEAE1;--gold:#B9975B;--silver:#C9CCCF;--oxblood:#6E2A2A;
---serif:'Bodoni Moda',Didot,'Bodoni 72',Georgia,serif;--sans:Aptos,'Albert Sans',system-ui,sans-serif}
+--serif:'Abril Fatface',Georgia,serif;--geo:'League Spartan',Futura,sans-serif;--sans:Aptos,'Albert Sans',system-ui,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--onyx);color:var(--bone);font-family:var(--sans);font-size:19px;line-height:1.7;font-weight:500;-webkit-font-smoothing:antialiased}
@@ -100,13 +100,36 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 }
 /* gold italic lettering: sturdier italic for readability */
 em.gold,.brand em{font-family:'Playfair Display',Georgia,serif;font-style:italic;font-weight:900}
+/* preview: seal top-left, heavier type */
+.brand{display:inline-flex;align-items:center;gap:12px;font-weight:400}
+.seal{width:58px;height:58px;display:block;flex:none}
+h1,h2,.brand{font-weight:400}
+h3{font-family:var(--geo);font-weight:800}
+.band p{font-family:'Playfair Display',Georgia,serif;font-weight:800}
+.label,nav a,.btn,label,.foot,.band .sub,.founder a{font-family:var(--geo);font-weight:800}
+.society-top{display:flex;justify-content:space-between;align-items:center;gap:40px;margin-bottom:48px}
+.society-top .intro{margin-bottom:0}
+.lighter-lg{width:150px;height:auto;flex:none;display:block}
+.submit{justify-self:center;width:auto;padding-left:40px;padding-right:40px}
+@media (max-width:860px){.lighter-lg{width:90px}}
 </style>
 </head>
 <body>
 
 <header>
  <div class="wrap nav">
-  <a class="brand" href="#top">CIGAR <em>Belles</em></a>
+  <a class="brand" href="#top" aria-label="Philly Cigar Belles, home"><svg class="seal" viewBox="0 0 340 340" aria-hidden="true">
+<defs><radialGradient id="pS" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="40%" stop-color="#ECE7DE"/><stop offset="100%" stop-color="#B9B3A8"/></radialGradient>
+<path id="sT" d="M 46 170 A 124 124 0 0 1 294 170"/><path id="sB" d="M 32 170 A 138 138 0 0 0 308 170"/></defs>
+<circle cx="170" cy="170" r="160" fill="#0E0E0E" stroke="#B9975B" stroke-width="5"/><circle cx="170" cy="170" r="150" fill="none" stroke="#B9975B" stroke-width="1.6"/>
+<circle cx="170" cy="170" r="112" fill="none" stroke="#B9975B" stroke-width="1.6"/><circle cx="170" cy="170" r="104" fill="none" stroke="#B9975B" stroke-width="5"/>
+<text font-family="'League Spartan',Futura,sans-serif" font-size="19" font-weight="800" letter-spacing="5" fill="#EFEAE1"><textPath href="#sT" startOffset="50%" text-anchor="middle">PHILLY CIGAR BELLES</textPath></text>
+<text font-family="'League Spartan',Futura,sans-serif" font-size="15" font-weight="800" letter-spacing="7" fill="#C9CCCF"><textPath href="#sB" startOffset="50%" text-anchor="middle">PHILADELPHIA</textPath></text>
+<circle cx="38" cy="170" r="8" fill="url(#pS)"/><circle cx="302" cy="170" r="8" fill="url(#pS)"/>
+<text x="170" y="172" text-anchor="middle" font-family="'Abril Fatface',Georgia,serif" font-size="44" fill="#EFEAE1">CIGAR</text>
+<path d="M139 104 C147 114 150 124 145 132 C143 135 135 135 133 132 C128 124 131 114 139 104 Z" fill="#B9975B"/><path d="M139 116 C142 121 143 126 141 130 C140 131 138 131 137 130 C135 126 136 121 139 116 Z" fill="#F4E2B6"/><ellipse cx="139" cy="133" rx="3.4" ry="1.6" fill="#3E6FB0"/>
+<text x="170" y="220" text-anchor="middle" font-family="'Playfair Display',Georgia,serif" font-size="54" font-weight="900" font-style="italic" fill="#B9975B">Belles</text>
+<line x1="140" y1="236" x2="200" y2="236" stroke="#B9975B" stroke-width="2"/></svg><span>CIGAR <em>Belles</em></span></a>
   <nav aria-label="Main">
    <ul>
     <li><a href="#society">The Society</a></li>
@@ -141,22 +164,35 @@ em.gold,.brand em{font-family:'Playfair Display',Georgia,serif;font-style:italic
 
  <div class="band">
   <div class="wrap">
-   <p>Strength is a kinder form of <em class="gold">beauty.</em></p>
-   <div class="sub">The Founding Belles lit the way. We keep it lit.</div>
+   <p>We light up for the women who <em class="gold">blazed the trail.</em></p>
+   <div class="sub">Their fire is ours to keep lit 🔥</div>
   </div>
  </div>
 
  <section class="block" id="society">
   <div class="wrap">
+   <div class="society-top">
    <div class="intro">
     <div class="label">The Society</div>
     <h2>A standing table of our own.</h2>
-    <p>Philly Cigar Belles is a private circle for women who love a fine cigar and better conversation. A great room, good pours, and the women worth knowing in this city.</p>
+    <p>Philly Cigar Belles is a members’ club for women. We plan nights out at Philadelphia’s cigar lounges, teach the craft from first cut to perfect pairing, and introduce like-minded women who should know each other.</p>
+   </div>
+   <svg class="lighter-lg" viewBox="0 0 270 480" role="img" aria-label="Faceted gold lighter, lid open, flame lit"><svg viewBox="112 56 270 480" width="270" height="480">
+<defs><pattern id="fL" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M0 0 L30 0 L15 15 Z" fill="#B9975B" fill-opacity="0.35"/><path d="M30 30 L0 30 L15 15 Z" fill="#B9975B" fill-opacity="0.15"/><path d="M0 0 L30 30 M30 0 L0 30" stroke="#B9975B" stroke-width="0.8"/></pattern></defs>
+<g transform="rotate(105 250 300)"><rect x="130" y="216" width="120" height="84" rx="8" fill="#0E0E0E"/><rect x="130" y="216" width="120" height="84" rx="8" fill="url(#fL)" stroke="#B9975B" stroke-width="5"/></g>
+<circle cx="250" cy="300" r="9" fill="#B9975B"/>
+<rect x="150" y="236" width="70" height="64" rx="4" fill="#0E0E0E"/><rect x="150" y="236" width="70" height="64" rx="4" fill="url(#fL)" stroke="#B9975B" stroke-width="4.5"/>
+<rect x="172" y="226" width="16" height="11" rx="2" fill="#B9975B"/>
+<path d="M180 236 C210 210 218 164 198 122 C190 106 184 94 182 76 C172 106 150 134 152 174 C154 208 164 224 180 236 Z" fill="#B9975B"/>
+<path d="M180 228 C194 212 196 184 185 158 C174 182 168 206 180 228 Z" fill="#EFEAE1"/>
+<ellipse cx="180" cy="226" rx="9" ry="4.5" fill="#3E6FB0"/>
+<rect x="130" y="300" width="120" height="222" rx="10" fill="#0E0E0E"/><rect x="130" y="300" width="120" height="222" rx="10" fill="url(#fL)" stroke="#B9975B" stroke-width="5.5"/>
+</svg></svg>
    </div>
    <div class="pillars">
-    <div class="pillar"><div class="label">Connect</div><h3>The right women in one room</h3><p>Founders, executives and creatives, curated so the conversation is worth staying for.</p></div>
-    <div class="pillar"><div class="label">Smoke</div><h3>Golden-hour sticks, good pours</h3><p>Hand-picked cigars and pairings, with a 101 for first-timers.</p></div>
-    <div class="pillar"><div class="label">Gather</div><h3>Private evenings</h3><p>Tastings, guest speakers and nights worth dressing up for.</p></div>
+    <div class="pillar"><div class="label">Organize</div><h3>Lounge nights</h3><p>We plan nights out at Philadelphia's cigar lounges, so you never walk in alone.</p></div>
+    <div class="pillar"><div class="label">Educate</div><h3>Learn the craft</h3><p>Cutting, lighting, wrappers, pairings and lounge etiquette. First-timers welcome.</p></div>
+    <div class="pillar"><div class="label">Community</div><h3>Women worth knowing</h3><p>Founders, executives and creatives, introduced on purpose.</p></div>
    </div>
   </div>
  </section>
@@ -191,7 +227,8 @@ em.gold,.brand em{font-family:'Playfair Display',Georgia,serif;font-style:italic
    </div>
    <div class="statement">
     <p>We met over a cigar at Ashton's and recognized each other right away: two women with similar paths, a love of a fine smoke, and a habit of introducing everyone we meet to someone they should know.</p>
-    <p>Kira in York, Shirah in Philadelphia, we kept finding the same thing. The best conversations happen in the lounge, and too few women are in the room. Philly Cigar Belles is our answer: a table where women connect, light up, and leave knowing people worth knowing.</p>
+    <p>Kira in York, Shirah in Philadelphia, we kept finding the same thing. The best conversations happen in the lounge, and too few women are in the room.</p>
+    <p><strong>Philly Cigar Belles</strong> is our answer: a table where women connect, light up, and leave knowing people worth knowing.</p>
    </div>
   </div>
  </section>
@@ -201,7 +238,7 @@ em.gold,.brand em{font-family:'Playfair Display',Georgia,serif;font-style:italic
    <div class="intro">
     <div class="label">Membership</div>
     <h2>Request an <em class="gold">invitation</em></h2>
-    <p>Membership is curated. Tell us a little about you and we'll be in touch. 21 and over.</p>
+    <p>Membership is curated. Tell us a little about you and we'll be in touch.</p>
    </div>
    <form action="https://formspree.io/f/xeaenwnb" method="POST">
     <label>Name<input type="text" name="name" autocomplete="name" required></label>
@@ -210,9 +247,8 @@ em.gold,.brand em{font-family:'Playfair Display',Georgia,serif;font-style:italic
     <label>Instagram<input type="text" name="instagram" placeholder="@"></label>
     <label class="full">Your cigar of choice (or "teach me")<textarea name="cigar" rows="3"></textarea></label>
     <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
-    <button class="btn btn-solid full" type="submit">Request an invitation</button>
+    <button class="btn btn-solid full submit" type="submit">Request an invitation</button>
    </form>
-   <p class="note muted">You must be 21 or older to attend.</p>
   </div>
  </section>
 </main>
