@@ -89,6 +89,15 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 .foot{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--silver)}
 .foot a{color:var(--silver);text-decoration:none}.foot a:hover{color:var(--gold)}
 
+.brand{display:inline-flex;align-items:center;gap:10px}
+.seal{width:46px;height:46px;display:block}
+.flame{width:24px;height:32px;display:block}
+.ornament{display:flex;align-items:center;gap:14px}.ornament::before,.ornament::after{content:"";width:44px;height:1px;background:var(--gold)}
+.band .ornament{justify-content:center;margin-bottom:22px}
+.soon{display:inline-block;align-self:flex-start;border:1px solid var(--gold);color:var(--gold);padding:6px 12px;font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.foot .seal{width:38px;height:38px}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
 @media (max-width:860px){
  .hero-grid{grid-template-columns:1fr;gap:36px}
  .hero-img{order:-1}
@@ -105,7 +114,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 
 <header>
  <div class="wrap nav">
-  <a class="brand" href="#top">CIGAR <em>Belles</em></a>
+  <a class="brand" href="#top" aria-label="Philly Cigar Belles, home"><svg class="seal" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#B9975B" stroke-width="2"/><circle cx="32" cy="32" r="24.5" fill="none" stroke="#B9975B" stroke-width="1"/><text x="30" y="44" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="32" font-weight="900" font-style="italic" fill="#B9975B">B</text><circle cx="43" cy="42" r="2.6" fill="#ECE7DE"/></svg></a>
   <nav aria-label="Main">
    <ul>
     <li><a href="#society">The Society</a></li>
@@ -125,7 +134,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
      <div class="label" style="letter-spacing:.62em">Philly</div>
      <h1>CIGAR<br><em class="gold">Belles</em></h1>
     </div>
-    <div class="rule"></div>
+    <div class="ornament"><svg class="flame" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C19 11 21 20 16 27C14 29.5 10 29.5 8 27C3 20 5 11 12 1Z" fill="#B9975B"/><path d="M12 12C15 17 15 21 13.4 24.4C12.7 25.2 11.3 25.2 10.6 24.4C9 21 9 17 12 12Z" fill="#F4E2B6"/><ellipse cx="12" cy="26.6" rx="3" ry="1.4" fill="#3E6FB0"/></svg></div>
     <p class="lede">For women who run the room, and like a good cigar at the end of it.</p>
     <div class="ctas">
      <a class="btn btn-solid" href="#join">Request an invitation</a>
@@ -140,6 +149,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 
  <div class="band">
   <div class="wrap">
+   <div class="ornament"><svg class="flame" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C19 11 21 20 16 27C14 29.5 10 29.5 8 27C3 20 5 11 12 1Z" fill="#B9975B"/><path d="M12 12C15 17 15 21 13.4 24.4C12.7 25.2 11.3 25.2 10.6 24.4C9 21 9 17 12 12Z" fill="#F4E2B6"/><ellipse cx="12" cy="26.6" rx="3" ry="1.4" fill="#3E6FB0"/></svg></div>
    <p>Strength is a kinder form of <em class="gold">beauty.</em></p>
    <div class="sub">The Founding Belles lit the way. We keep it lit.</div>
   </div>
@@ -155,7 +165,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
    <div class="pillars">
     <div class="pillar"><div class="label">Connect</div><h3>The right women in one room</h3><p>Founders, executives and creatives, curated so the conversation is worth staying for.</p></div>
     <div class="pillar"><div class="label">Smoke</div><h3>Golden-hour sticks, good pours</h3><p>Hand-picked cigars and pairings, with a 101 for first-timers.</p></div>
-    <div class="pillar"><div class="label">Gather</div><h3>Private evenings</h3><p>Tastings, guest speakers and nights worth dressing up for.</p></div>
+    <div class="pillar"><div class="label">Gather</div><h3>Private evenings</h3><span class="soon">Coming soon</span></div>
    </div>
   </div>
  </section>
@@ -218,7 +228,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 
 <footer>
  <div class="wrap foot">
-  <span>Philly Cigar Belles · Philadelphia · 21+</span>
+  <span style="display:flex;align-items:center;gap:12px"><svg class="seal" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#B9975B" stroke-width="2"/><circle cx="32" cy="32" r="24.5" fill="none" stroke="#B9975B" stroke-width="1"/><text x="30" y="44" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="32" font-weight="900" font-style="italic" fill="#B9975B">B</text><circle cx="43" cy="42" r="2.6" fill="#ECE7DE"/></svg><span class="vh">Philly Cigar Belles</span>Philadelphia · 21+</span>
   <a href="https://instagram.com/philly_cigar_belles" rel="noopener">@philly_cigar_belles</a>
   <span>phillycigarbelles.com</span>
  </div>
