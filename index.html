@@ -138,9 +138,54 @@ body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;opa
 h1,h2,.band p{text-transform:none;letter-spacing:0}
 em.gold,.band em.gold,.brand .wm span{color:var(--champagne)}
 .band .sub{color:var(--champagne)}
+
+/* logo + lighter iconography */
+.lighter{width:26px;height:46px;display:block}
+.brand .lighter{width:12px;height:22px}
+.foot .seal-sm{width:44px;height:44px;text-transform:none;letter-spacing:normal}
+.seal-lg{width:200px;height:200px;display:block;margin:0 auto 28px}
+.about{display:grid;grid-template-columns:minmax(0,1fr) 200px;gap:56px;align-items:center;margin-bottom:56px}
+.lighter-lg{width:100%;max-width:200px;height:auto;display:block;filter:drop-shadow(0 0 40px rgba(233,201,138,.25))}
+.pillar .soon{margin-top:6px}
+@media (max-width:860px){.about{grid-template-columns:1fr;gap:32px}.lighter-lg{max-width:120px}}
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+ <radialGradient id="pearlS" cx="35%" cy="32%" r="70%"><stop offset="0%" stop-color="#FFFFFF"/><stop offset="40%" stop-color="#ECE7DE"/><stop offset="100%" stop-color="#B9B3A8"/></radialGradient>
+ <linearGradient id="goldS" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#EBD39C"/><stop offset="100%" stop-color="#A9823F"/></linearGradient>
+ <linearGradient id="flameS" x1="0" y1="1" x2="0" y2="0"><stop offset="0%" stop-color="#3E6FB0"/><stop offset="14%" stop-color="#8FB8E8"/><stop offset="30%" stop-color="#FFF4DC"/><stop offset="65%" stop-color="#EBC277"/><stop offset="100%" stop-color="#C98A3A"/></linearGradient>
+ <pattern id="facetsF" width="30" height="30" patternUnits="userSpaceOnUse"><path d="M0 0 L30 0 L15 15 Z" fill="#B9975B" fill-opacity="0.35"/><path d="M30 30 L0 30 L15 15 Z" fill="#B9975B" fill-opacity="0.15"/><path d="M0 0 L30 30 M30 0 L0 30" stroke="#B9975B" stroke-width="0.8"/></pattern>
+ <path id="sealTopP" d="M 46 170 A 124 124 0 0 1 294 170"/>
+ <path id="sealBotP" d="M 32 170 A 138 138 0 0 0 308 170"/>
+</defs>
+<symbol id="i-lighter" viewBox="112 56 270 480">
+ <g transform="rotate(105 250 300)"><rect x="130" y="216" width="120" height="84" rx="8" fill="#0E0E0E"/><rect x="130" y="216" width="120" height="84" rx="8" fill="url(#facetsF)" stroke="#B9975B" stroke-width="5"/></g>
+ <circle cx="250" cy="300" r="9" fill="#B9975B"/>
+ <rect x="150" y="236" width="70" height="64" rx="4" fill="#0E0E0E"/><rect x="150" y="236" width="70" height="64" rx="4" fill="url(#facetsF)" stroke="#B9975B" stroke-width="4.5"/>
+ <rect x="172" y="226" width="16" height="11" rx="2" fill="#B9975B"/>
+ <path d="M180 236 C210 210 218 164 198 122 C190 106 184 94 182 76 C172 106 150 134 152 174 C154 208 164 224 180 236 Z" fill="url(#flameS)"/>
+ <path d="M180 228 C194 212 196 184 185 158 C174 182 168 206 180 228 Z" fill="#FFF8EA"/>
+ <ellipse cx="180" cy="226" rx="9" ry="4.5" fill="#3E6FB0"/>
+ <rect x="130" y="300" width="120" height="222" rx="10" fill="#0E0E0E"/><rect x="130" y="300" width="120" height="222" rx="10" fill="url(#facetsF)" stroke="#B9975B" stroke-width="5.5"/>
+</symbol>
+<symbol id="i-seal" viewBox="0 0 340 340">
+ <circle cx="170" cy="170" r="160" fill="#0E0E0E" stroke="#B9975B" stroke-width="2.5"/>
+ <circle cx="170" cy="170" r="152" fill="none" stroke="#B9975B" stroke-width="0.8"/>
+ <circle cx="170" cy="170" r="112" fill="none" stroke="#B9975B" stroke-width="0.8"/>
+ <circle cx="170" cy="170" r="104" fill="none" stroke="#B9975B" stroke-width="2.5"/>
+ <text font-family="'League Spartan',Futura,sans-serif" font-size="16" font-weight="800" letter-spacing="6" fill="#EFEAE1"><textPath href="#sealTopP" startOffset="50%" text-anchor="middle">PHILLY CIGAR BELLES</textPath></text>
+ <text font-family="'League Spartan',Futura,sans-serif" font-size="13" font-weight="800" letter-spacing="7" fill="#F4E2B6"><textPath href="#sealBotP" startOffset="50%" text-anchor="middle">KEEP IT LIT</textPath></text>
+ <circle cx="38" cy="170" r="7" fill="url(#pearlS)"/><circle cx="302" cy="170" r="7" fill="url(#pearlS)"/>
+ <text x="170" y="172" text-anchor="middle" font-family="'Abril Fatface',Georgia,serif" font-size="44" fill="#EFEAE1">CIGAR</text>
+ <path d="M139 104 C147 114 150 124 145 132 C143 135 135 135 133 132 C128 124 131 114 139 104 Z" fill="url(#flameS)"/>
+ <path d="M139 116 C142 121 143 126 141 130 C140 131 138 131 137 130 C135 126 136 121 139 116 Z" fill="#FFF8EA"/>
+ <ellipse cx="139" cy="133" rx="3.4" ry="1.6" fill="#3E6FB0"/>
+ <text x="170" y="220" text-anchor="middle" font-family="'Playfair Display',Georgia,serif" font-size="52" font-weight="900" font-style="italic" fill="#F4E2B6">Belles</text>
+ <circle cx="230" cy="216" r="5" fill="url(#pearlS)"/>
+</symbol>
+</svg>
 
 <header>
  <div class="wrap nav">
@@ -161,7 +206,7 @@ em.gold,.band em.gold,.brand .wm span{color:var(--champagne)}
    <div class="hero-copy">
     <div class="label muted">Philly Women's Cigar Society · 21+</div>
     <h1>Women who run the room, <em class="gold">then light up after.</em></h1>
-    <div class="ornament"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><defs><linearGradient id="jet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4E2B6"/><stop offset=".55" stop-color="#B9975B"/><stop offset="1" stop-color="#3E6FB0"/></linearGradient></defs><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg></div>
+    <div class="ornament"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg><svg class="lighter" viewBox="0 0 270 480" aria-hidden="true"><use href="#i-lighter"/></svg><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg></div>
     <p class="lede">A private cigar society for the women of Philadelphia.</p>
     <div class="ctas">
      <a class="btn btn-solid" href="#join">Request an invitation</a>
@@ -176,7 +221,7 @@ em.gold,.band em.gold,.brand .wm span{color:var(--champagne)}
 
  <div class="band">
   <div class="wrap">
-   <div class="ornament"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg></div>
+   <svg class="seal-lg" viewBox="0 0 340 340" role="img" aria-label="Philly Cigar Belles seal"><use href="#i-seal"/></svg>
    <p>We light up for the women who <em class="gold">blazed the trail.</em></p>
    <div class="sub">Their fire is ours to keep lit 🔥</div>
   </div>
@@ -184,15 +229,18 @@ em.gold,.band em.gold,.brand .wm span{color:var(--champagne)}
 
  <section class="block" id="society">
   <div class="wrap">
-   <div class="intro">
-    <div class="label">The Society</div>
-    <h2>A standing table of our own.</h2>
-    <p>Philly Cigar Belles is a private circle for women who love a fine cigar and better conversation. A great room, good pours, and the women worth knowing in this city.</p>
+   <div class="about">
+    <div class="intro">
+     <div class="label">What we are</div>
+     <h2>A club for women who love <em class="gold">a good cigar.</em></h2>
+     <p>Philly Cigar Belles is a members' club for women. We plan nights out at Philadelphia's cigar lounges, teach the craft from first cut to perfect pairing, and introduce like-minded women who should know each other.</p>
+    </div>
+    <svg class="lighter-lg" viewBox="0 0 270 480" role="img" aria-label="Faceted gold flip-top lighter, lid open, flame lit"><use href="#i-lighter"/></svg>
    </div>
    <div class="pillars">
-    <div class="pillar"><div class="label">Connect</div><h3>The right women in one room</h3><p>Founders, executives and creatives, curated so the conversation is worth staying for.</p></div>
-    <div class="pillar"><div class="label">Smoke</div><h3>Golden-hour sticks, good pours</h3><p>Hand-picked cigars and pairings, with a 101 for first-timers.</p></div>
-    <div class="pillar"><div class="label">Gather</div><h3>Private evenings</h3><span class="soon">Coming soon</span></div>
+    <div class="pillar"><div class="label">Lounge nights</div><h3>We take over the lounge</h3><p>Group visits to the city's best cigar lounges, organized for you, so you never walk in alone.</p><span class="soon">First night coming soon</span></div>
+    <div class="pillar"><div class="label">Education</div><h3>Learn the craft</h3><p>Cutting, lighting, wrappers and pairings, plus lounge etiquette. For first-timers and aficionados alike.</p></div>
+    <div class="pillar"><div class="label">Connection</div><h3>Meet your people</h3><p>Founders, executives and creatives, introduced on purpose. Come for the cigar, leave with women worth knowing.</p></div>
    </div>
   </div>
  </section>
@@ -255,7 +303,7 @@ em.gold,.band em.gold,.brand .wm span{color:var(--champagne)}
 
 <footer>
  <div class="wrap foot">
-  <span style="display:flex;align-items:center;gap:12px"><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><span class="vh">Philly Cigar Belles</span>Philadelphia · 21+</span>
+  <span style="display:flex;align-items:center;gap:12px"><svg class="seal-sm" viewBox="0 0 340 340" aria-hidden="true"><use href="#i-seal"/></svg><span class="vh">Philly Cigar Belles</span>Philadelphia · 21+</span>
   <a href="https://instagram.com/philly_cigar_belles" rel="noopener">@philly_cigar_belles</a>
   <span>phillycigarbelles.com</span>
  </div>
