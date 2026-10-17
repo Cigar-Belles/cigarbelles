@@ -14,10 +14,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,600..900;1,9..144,600..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;500;600;700&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{--onyx:#0B0B0B;--panel:#121110;--line:#2A2928;--bone:#EFEAE1;--gold:#B9975B;--silver:#C9CCCF;--oxblood:#6E2A2A;
---serif:'Fraunces',Georgia,serif;--sans:Aptos,'Albert Sans',system-ui,sans-serif}
+--serif:'Oswald','Arial Narrow',Impact,sans-serif;--champagne:#F4E2B6;--steel:#3E6FB0;--sans:Aptos,'Albert Sans',system-ui,sans-serif}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--onyx);color:var(--bone);font-family:var(--sans);font-size:19px;line-height:1.7;font-weight:500;-webkit-font-smoothing:antialiased}
@@ -26,12 +26,11 @@ a{color:var(--gold)}a:hover{color:var(--bone)}
 .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
 .label{font-size:14px;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--gold)}
 .muted{color:var(--silver)}
-h1,h2,h3{font-family:var(--serif);font-weight:900;margin:0;line-height:1.02}
-h1,h2,h3,.brand,.band p{font-variation-settings:"opsz" 28;font-optical-sizing:none}
-em.gold{font-style:italic;color:var(--gold)}
+h1,h2,h3{font-family:var(--serif);font-weight:700;margin:0;line-height:1.02;text-transform:uppercase;letter-spacing:.01em}
+em.gold{font-style:normal;color:var(--gold)}
 .btn{display:inline-block;padding:17px 28px;font:700 14px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);transition:background .2s,color .2s}
 .btn-solid{background:var(--gold);color:var(--onyx)}.btn-solid:hover{background:var(--bone);border-color:var(--bone);color:var(--onyx)}
-.btn-line{color:var(--bone)}.btn-line:hover{background:var(--gold);color:var(--onyx)}
+.btn-line{color:var(--bone)}.btn-line:hover{background:var(--oxblood);border-color:var(--oxblood);color:var(--bone)}
 
 header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,11,11,.92);backdrop-filter:blur(8px);z-index:10}
 .nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:16px;padding-bottom:16px}
@@ -44,31 +43,32 @@ nav a:hover{color:var(--gold)}
 .hero{padding:56px 0 80px}
 .hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center}
 .hero-copy{display:flex;flex-direction:column;gap:26px}
-.hero h1{font-size:clamp(60px,8.4vw,128px);line-height:.9;letter-spacing:-.02em}
+.hero h1{font-size:clamp(52px,6.6vw,96px);line-height:.95;letter-spacing:.01em}
 .rule{width:96px;height:1px;background:var(--gold)}
 .lede{font-size:23px;line-height:1.5;max-width:480px;margin:0}
 .ctas{display:flex;flex-wrap:wrap;gap:12px}
 .hero-img{border:1px solid var(--line)}
 .hero-img img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
 
-.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;padding:72px 0}
-.band p{margin:0;font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(30px,4.4vw,58px);line-height:1.15}
-.band .sub{margin-top:18px;font-family:var(--sans);font-style:normal;font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--silver)}
+.band{background:var(--oxblood);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;padding:72px 0}
+.band em.gold{color:var(--champagne)}
+.band p{margin:0;font-family:var(--serif);font-style:normal;font-weight:600;text-transform:uppercase;font-size:clamp(30px,4.4vw,58px);line-height:1.15}
+.band .sub{margin-top:18px;font-family:var(--sans);font-style:normal;font-size:15px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--champagne)}
 
 section.block{padding:96px 0}
 .intro{max-width:720px;display:flex;flex-direction:column;gap:14px;margin-bottom:48px}
 .intro h2{font-size:clamp(36px,4.4vw,58px)}
 .intro p{margin:0;font-size:20px}
 .pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
-.pillar{border-top:1px solid var(--gold);padding-top:20px;display:flex;flex-direction:column;gap:10px}
-.pillar h3{font-size:28px;font-weight:700;line-height:1.1}
+.pillar{border-top:3px solid var(--oxblood);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.pillar h3{font-size:26px;font-weight:600;line-height:1.1}
 .pillar p{margin:0}
 
-.heritage{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.heritage{background:linear-gradient(180deg,#1A0F0F,var(--panel));border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .heritage .intro{margin:0 auto;text-align:center;align-items:center}
 
 .founders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
-.founder{border-top:1px solid var(--gold);padding-top:20px;display:flex;flex-direction:column;gap:8px}
+.founder{border-top:3px solid var(--oxblood);padding-top:20px;display:flex;flex-direction:column;gap:8px}
 .founder h3{font-size:34px}
 .founder p{margin:0}
 .founder a{font-size:14px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;text-decoration:none}
@@ -89,13 +89,17 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 .foot{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center;font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--silver)}
 .foot a{color:var(--silver);text-decoration:none}.foot a:hover{color:var(--gold)}
 
-.brand{display:inline-flex;align-items:center;gap:10px}
-.seal{width:46px;height:46px;display:block}
-.flame{width:24px;height:32px;display:block}
-.ornament{display:flex;align-items:center;gap:14px}.ornament::before,.ornament::after{content:"";width:44px;height:1px;background:var(--gold)}
+.brand{display:flex;flex-direction:column;align-items:flex-end;gap:4px;text-decoration:none;order:2;margin-left:auto}
+.brand .wm{font-family:var(--serif);font-weight:700;font-size:26px;line-height:1;letter-spacing:.04em;color:var(--bone);text-transform:uppercase}.brand .wm span{color:var(--gold)}
+.brand .lit{display:flex;align-items:center;gap:8px;font:700 11px/1 var(--sans);letter-spacing:.3em;text-transform:uppercase;color:var(--gold)}
+header nav{order:1}
+.lighter{width:28px;height:47px;display:block}
+.brand .lighter{width:12px;height:20px}
+.pearls{height:10px;width:auto;display:block}
+.ornament{display:flex;align-items:center;gap:12px}
 .band .ornament{justify-content:center;margin-bottom:22px}
-.soon{display:inline-block;align-self:flex-start;border:1px solid var(--gold);color:var(--gold);padding:6px 12px;font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase}
-.foot .seal{width:38px;height:38px}
+.soon{display:inline-block;align-self:flex-start;background:var(--oxblood);color:var(--champagne);padding:6px 12px;font:700 12px/1 var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.foot .lighter{width:16px;height:28px}
 .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 
 @media (max-width:860px){
@@ -106,6 +110,9 @@ footer{border-top:1px solid var(--line);padding:32px 0}
  nav ul{gap:8px 18px}
  nav .btn{padding:13px 18px}
  .hero{padding-top:28px}
+ .brand{order:0;margin-left:0;align-items:flex-start;width:100%}
+ header nav{width:100%}
+ nav ul li:not(:last-child){display:none}
  section.block{padding:72px 0}
 }
 </style>
@@ -114,7 +121,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 
 <header>
  <div class="wrap nav">
-  <a class="brand" href="#top" aria-label="Philly Cigar Belles, home"><svg class="seal" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#B9975B" stroke-width="2"/><circle cx="32" cy="32" r="24.5" fill="none" stroke="#B9975B" stroke-width="1"/><text x="30" y="44" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="32" font-weight="900" font-style="italic" fill="#B9975B">B</text><circle cx="43" cy="42" r="2.6" fill="#ECE7DE"/></svg></a>
+  <a class="brand" href="#top" aria-label="Philly Cigar Belles, home"><span class="wm">Cigar <span>Belles</span></span><span class="lit"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><defs><radialGradient id="pearl" cx=".35" cy=".35" r=".7"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#ECE7DE"/><stop offset="1" stop-color="#A9A398"/></radialGradient></defs><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg>Keep it lit</span></a>
   <nav aria-label="Main">
    <ul>
     <li><a href="#society">The Society</a></li>
@@ -130,12 +137,9 @@ footer{border-top:1px solid var(--line);padding:32px 0}
   <div class="wrap hero-grid">
    <div class="hero-copy">
     <div class="label muted">Philadelphia · Members' Society</div>
-    <div>
-     <div class="label" style="letter-spacing:.62em">Philly</div>
-     <h1>CIGAR<br><em class="gold">Belles</em></h1>
-    </div>
-    <div class="ornament"><svg class="flame" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C19 11 21 20 16 27C14 29.5 10 29.5 8 27C3 20 5 11 12 1Z" fill="#B9975B"/><path d="M12 12C15 17 15 21 13.4 24.4C12.7 25.2 11.3 25.2 10.6 24.4C9 21 9 17 12 12Z" fill="#F4E2B6"/><ellipse cx="12" cy="26.6" rx="3" ry="1.4" fill="#3E6FB0"/></svg></div>
-    <p class="lede">For women who run the room, and like a good cigar at the end of it.</p>
+    <h1>Women who run the room, <em class="gold">then light up after.</em></h1>
+    <div class="ornament"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><defs><linearGradient id="jet" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F4E2B6"/><stop offset=".55" stop-color="#B9975B"/><stop offset="1" stop-color="#3E6FB0"/></linearGradient></defs><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg></div>
+    <p class="lede">A private cigar society for the women of Philadelphia.</p>
     <div class="ctas">
      <a class="btn btn-solid" href="#join">Request an invitation</a>
      <a class="btn btn-line" href="#society">The Society</a>
@@ -149,7 +153,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 
  <div class="band">
   <div class="wrap">
-   <div class="ornament"><svg class="flame" viewBox="0 0 24 32" aria-hidden="true"><path d="M12 1C19 11 21 20 16 27C14 29.5 10 29.5 8 27C3 20 5 11 12 1Z" fill="#B9975B"/><path d="M12 12C15 17 15 21 13.4 24.4C12.7 25.2 11.3 25.2 10.6 24.4C9 21 9 17 12 12Z" fill="#F4E2B6"/><ellipse cx="12" cy="26.6" rx="3" ry="1.4" fill="#3E6FB0"/></svg></div>
+   <div class="ornament"><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><svg class="pearls" viewBox="0 0 58 10" aria-hidden="true"><circle cx="5" cy="5" r="2.6" fill="url(#pearl)"/><circle cx="17" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="29" cy="5" r="4.2" fill="url(#pearl)"/><circle cx="41" cy="5" r="3.4" fill="url(#pearl)"/><circle cx="53" cy="5" r="2.6" fill="url(#pearl)"/></svg></div>
    <p>Strength is a kinder form of <em class="gold">beauty.</em></p>
    <div class="sub">The Founding Belles lit the way. We keep it lit.</div>
   </div>
@@ -228,7 +232,7 @@ footer{border-top:1px solid var(--line);padding:32px 0}
 
 <footer>
  <div class="wrap foot">
-  <span style="display:flex;align-items:center;gap:12px"><svg class="seal" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="29" fill="none" stroke="#B9975B" stroke-width="2"/><circle cx="32" cy="32" r="24.5" fill="none" stroke="#B9975B" stroke-width="1"/><text x="30" y="44" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="32" font-weight="900" font-style="italic" fill="#B9975B">B</text><circle cx="43" cy="42" r="2.6" fill="#ECE7DE"/></svg><span class="vh">Philly Cigar Belles</span>Philadelphia · 21+</span>
+  <span style="display:flex;align-items:center;gap:12px"><svg class="lighter" viewBox="0 0 24 40" aria-hidden="true"><path d="M12 0C14.6 3.4 15.2 6.4 12 9.2C8.8 6.4 9.4 3.4 12 0Z" fill="url(#jet)"/><rect x="9.5" y="9" width="5" height="3" fill="#C9CCCF"/><path d="M6 12H18V17H6Z" fill="#C9CCCF"/><rect x="5" y="17" width="14" height="22" rx="2" fill="#B9975B"/><rect x="5" y="24" width="14" height="5" fill="#6E2A2A"/><circle cx="12" cy="34" r="1.6" fill="#F4E2B6"/></svg><span class="vh">Philly Cigar Belles</span>Philadelphia · 21+</span>
   <a href="https://instagram.com/philly_cigar_belles" rel="noopener">@philly_cigar_belles</a>
   <span>phillycigarbelles.com</span>
  </div>
