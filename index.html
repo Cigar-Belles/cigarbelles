@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Philly Cigar Belles · A Philadelphia society of women, fine cigars and good company</title>
+<meta name="description" content="Philly Cigar Belles is a private Philadelphia society for women who love a fine cigar and better conversation. The Founding Belles lit the way. We keep it lit.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Philly Cigar Belles">
+<meta property="og:description" content="The Founding Belles lit the way. We keep it lit.">
+<meta property="og:image" content="https://phillycigarbelles.com/assets/og.jpg">
+<meta property="og:url" content="https://phillycigarbelles.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600;700&family=Bodoni+Moda:ital,opsz,wght@0,6..96,700;0,6..96,900;1,6..96,700;1,6..96,900&display=swap" rel="stylesheet">
+<style>
+:root{--onyx:#0B0B0B;--panel:#121110;--line:#2A2928;--bone:#EFEAE1;--gold:#B9975B;--silver:#A9ADB1;--oxblood:#6E2A2A;
+--serif:'Bodoni Moda',Didot,'Bodoni 72',Georgia,serif;--sans:Aptos,'Albert Sans',system-ui,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--onyx);color:var(--bone);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:var(--gold)}a:hover{color:var(--bone)}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.label{font-size:13px;font-weight:700;letter-spacing:.4em;text-transform:uppercase;color:var(--gold)}
+.muted{color:var(--silver)}
+h1,h2,h3{font-family:var(--serif);font-weight:900;margin:0;line-height:1}
+em.gold{font-style:italic;color:var(--gold)}
+.btn{display:inline-block;padding:17px 28px;font:700 13px/1 var(--sans);letter-spacing:.22em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold);transition:background .2s,color .2s}
+.btn-solid{background:var(--gold);color:var(--onyx)}.btn-solid:hover{background:var(--bone);border-color:var(--bone);color:var(--onyx)}
+.btn-line{color:var(--bone)}.btn-line:hover{background:var(--gold);color:var(--onyx)}
+
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(11,11,11,.92);backdrop-filter:blur(8px);z-index:10}
+.nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px 24px;padding-top:16px;padding-bottom:16px}
+.brand{font-family:var(--serif);font-weight:900;font-size:24px;color:var(--bone);text-decoration:none;letter-spacing:-.01em}
+.brand em{font-style:italic;color:var(--gold)}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 28px;align-items:center}
+nav a{color:var(--bone);text-decoration:none;font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase}
+nav a:hover{color:var(--gold)}
+
+.hero{padding:56px 0 80px}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:56px;align-items:center}
+.hero-copy{display:flex;flex-direction:column;gap:26px}
+.hero h1{font-size:clamp(64px,9vw,136px);line-height:.86;letter-spacing:-.03em}
+.rule{width:96px;height:1px;background:var(--gold)}
+.lede{font-size:21px;max-width:480px;margin:0}
+.ctas{display:flex;flex-wrap:wrap;gap:12px}
+.hero-img{border:1px solid var(--line)}
+.hero-img img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
+
+.band{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line);text-align:center;padding:72px 0}
+.band p{margin:0;font-family:var(--serif);font-style:italic;font-weight:700;font-size:clamp(30px,4.4vw,58px);line-height:1.15}
+.band .sub{margin-top:18px;font-family:var(--sans);font-style:normal;font-size:13px;font-weight:700;letter-spacing:.32em;text-transform:uppercase;color:var(--silver)}
+
+section.block{padding:96px 0}
+.intro{max-width:720px;display:flex;flex-direction:column;gap:14px;margin-bottom:48px}
+.intro h2{font-size:clamp(36px,4.4vw,58px)}
+.intro p{margin:0;font-size:18px}
+.pillars{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.pillar{border-top:1px solid var(--gold);padding-top:20px;display:flex;flex-direction:column;gap:10px}
+.pillar h3{font-size:26px;font-weight:700}
+.pillar p{margin:0}
+
+.heritage{background:var(--panel);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.heritage .intro{margin:0 auto;text-align:center;align-items:center}
+
+.founders{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:32px}
+.founder{border-top:1px solid var(--gold);padding-top:20px;display:flex;flex-direction:column;gap:8px}
+.founder h3{font-size:30px}
+.founder p{margin:0}
+
+.join{max-width:760px;margin:0 auto}
+.join .intro{margin:0 auto 32px;text-align:center;align-items:center}
+form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+label{display:flex;flex-direction:column;gap:8px;font-size:12px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--silver)}
+input,textarea{background:var(--onyx);border:1px solid #3A3936;color:var(--bone);padding:15px;font:16px var(--sans);letter-spacing:normal;text-transform:none}
+input:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+.full{grid-column:1/-1}
+button{cursor:pointer}
+.note{font-size:14px;text-align:center;margin:16px 0 0}
+
+footer{border-top:1px solid var(--line);padding:32px 0}
+.foot{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between;align-items:center;font-size:12px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--silver)}
+.foot a{color:var(--silver);text-decoration:none}.foot a:hover{color:var(--gold)}
+
+@media (max-width:860px){
+ .hero-grid{grid-template-columns:1fr;gap:36px}
+ .hero-img{order:-1}
+ .pillars,.founders{grid-template-columns:1fr}
+ form{grid-template-columns:1fr}
+ nav ul{gap:8px 18px}
+ nav .btn{padding:13px 18px}
+ .hero{padding-top:28px}
+ section.block{padding:72px 0}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#top">CIGAR <em>Belles</em></a>
+  <nav aria-label="Main">
+   <ul>
+    <li><a href="#society">The Society</a></li>
+    <li><a href="#founders">Founders</a></li>
+    <li><a class="btn btn-solid" href="#join">Request an invitation</a></li>
+   </ul>
+  </nav>
+ </div>
+</header>
+
+<main id="top">
+ <section class="hero">
+  <div class="wrap hero-grid">
+   <div class="hero-copy">
+    <div class="label muted">Philadelphia · Members' Society</div>
+    <div>
+     <div class="label" style="letter-spacing:.62em">Philly</div>
+     <h1>CIGAR<br><em class="gold">Belles</em></h1>
+    </div>
+    <div class="rule"></div>
+    <p class="lede">For women who run the room, and like a good cigar at the end of it.</p>
+    <div class="ctas">
+     <a class="btn btn-solid" href="#join">Request an invitation</a>
+     <a class="btn btn-line" href="#society">The Society</a>
+    </div>
+   </div>
+   <div class="hero-img">
+    <img src="assets/belles.jpg" width="1600" height="1067" alt="Kira and Shirah in ivory gowns with cigars on a black velvet chaise, a gold eagle behind them, drawn in ink and gold">
+   </div>
+  </div>
+ </section>
+
+ <div class="band">
+  <div class="wrap">
+   <p>Strength is a kinder form of <em class="gold">beauty.</em></p>
+   <div class="sub">The Founding Belles lit the way. We keep it lit.</div>
+  </div>
+ </div>
+
+ <section class="block" id="society">
+  <div class="wrap">
+   <div class="intro">
+    <div class="label">The Society</div>
+    <h2>A standing table of our own.</h2>
+    <p>Philly Cigar Belles is a private circle for women who love a fine cigar and better conversation. A great room, good pours, and the women worth knowing in this city.</p>
+   </div>
+   <div class="pillars">
+    <div class="pillar"><div class="label">Connect</div><h3>The right women in one room</h3><p>Founders, executives and creatives, curated so the conversation is worth staying for.</p></div>
+    <div class="pillar"><div class="label">Smoke</div><h3>Golden-hour sticks, good pours</h3><p>Hand-picked cigars and pairings, with a 101 for first-timers.</p></div>
+    <div class="pillar"><div class="label">Gather</div><h3>Private evenings</h3><p>Tastings, guest speakers and nights worth dressing up for.</p></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="block heritage">
+  <div class="wrap">
+   <div class="intro">
+    <div class="label">Founding Belles</div>
+    <h2>Philadelphia women have always <em class="gold">lit their own.</em></h2>
+    <p>From the city's cigar-box era to today, strong women have claimed their seat at the table. We're simply pulling up a chair and keeping the tradition lit.</p>
+   </div>
+  </div>
+ </section>
+
+ <section class="block" id="founders">
+  <div class="wrap">
+   <div class="intro">
+    <div class="label">The Founders</div>
+    <h2>Two Belles, one table.</h2>
+   </div>
+   <div class="founders">
+    <div class="founder">
+     <h3>Kira [Last name]</h3>
+     <div class="label">Co-founder</div>
+     <p class="muted">[Short bio: who she is, and the cigar she reaches for.]</p>
+    </div>
+    <div class="founder">
+     <h3>Shirah M. Brown</h3>
+     <div class="label">Co-founder</div>
+     <p class="muted">[Short bio: who she is, and the cigar she reaches for.]</p>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="block heritage" id="join">
+  <div class="wrap join">
+   <div class="intro">
+    <div class="label">Membership</div>
+    <h2>Request an <em class="gold">invitation</em></h2>
+    <p>Membership is curated. Tell us a little about you and we'll be in touch. 21 and over.</p>
+   </div>
+   <form action="https://formspree.io/f/xeaenwnb" method="POST">
+    <label>Name<input type="text" name="name" autocomplete="name" required></label>
+    <label>Email<input type="email" name="email" autocomplete="email" required></label>
+    <label>What you do<input type="text" name="work"></label>
+    <label>Instagram<input type="text" name="instagram" placeholder="@"></label>
+    <label class="full">Your cigar of choice (or "teach me")<textarea name="cigar" rows="3"></textarea></label>
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+    <button class="btn btn-solid full" type="submit">Request an invitation</button>
+   </form>
+   <p class="note muted">You must be 21 or older to attend.</p>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap foot">
+  <span>Philly Cigar Belles · Philadelphia · 21+</span>
+  <a href="https://instagram.com/phillycigarbelles" rel="noopener">@phillycigarbelles</a>
+  <span>phillycigarbelles.com</span>
+ </div>
+</footer>
+
+</body>
+</html>
