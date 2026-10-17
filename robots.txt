@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phillycigarbelles.com/sitemap.xml
