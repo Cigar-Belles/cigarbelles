@@ -151,6 +151,9 @@ td:nth-child(2),td:nth-child(3){white-space:nowrap;color:var(--silver)}
 /* gold accent text: Anton caps; the hero wordmark stays Bodoni */
 em.gold{font-family:'Anton',Impact,sans-serif;font-style:normal;font-weight:400;text-transform:uppercase;letter-spacing:.01em}
 h1 em.gold,.brand em{font-family:var(--serif);font-style:italic;font-weight:900;text-transform:none;letter-spacing:inherit}
+.social{display:inline-flex;align-items:center;gap:20px}
+.social a{display:block;opacity:.85;transition:opacity .2s}.social a:hover{opacity:1}
+.social img{display:block}
 </style>
 </head>
 <body>
@@ -325,7 +328,10 @@ h1 em.gold,.brand em{font-family:var(--serif);font-style:italic;font-weight:900;
 <footer>
  <div class="wrap foot">
   <span>Philly Cigar Belles · Philadelphia · 21+</span>
-  <a href="https://instagram.com/philly_cigar_belles" rel="noopener">@philly_cigar_belles</a>
+  <span class="social">
+   <a href="https://instagram.com/philly_cigar_belles" rel="noopener" aria-label="Instagram: @philly_cigar_belles"><img src="assets/instagram.svg" width="22" height="22" alt=""></a>
+   <a href="https://www.facebook.com/profile.php?id=61595290362539" rel="noopener" aria-label="Facebook"><img src="assets/facebook.svg" width="26" height="26" alt=""></a>
+  </span>
   <span>phillycigarbelles.com</span>
  </div>
 </footer>
